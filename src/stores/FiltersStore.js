@@ -18,7 +18,7 @@ class FiltersStore {
         this.filters.forEach(
             filter => {
                 if (this.values[filter.name] != filter.default)
-                    query += filter.template.replace("$" , this.values[filter.name]);
+                    query += filter.template.replace("$" , this.values[filter.name]) + " ";
             }
         );
         return query.length > 0 ? query : null;

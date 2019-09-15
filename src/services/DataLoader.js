@@ -12,19 +12,15 @@ class DataLoader {
     this.filtersStore = filtersStore;
   }
 
-  loadByUrl(url) {
-    this.loadData(url, null)
-  }
-
   reloadData() {
-    this.loadData(null, this.filtersStore.query);
+    this.loadByUrl(this.createUrl(this.filtersStore.query));
   }
 
-  loadData(url, query) {
+  loadByUrl(url) {
     this.dataStore.startLoading();
 
     axios
-        .get(this.createUrl(url, query))
+        .get(url)
         .then(response => {
           this.onDataLoad(
               response.data.items ? response.data.items : response.data,
@@ -37,10 +33,8 @@ class DataLoader {
             });
   }
 
-  createUrl(url, query) {
-    return url ?                            // if we used the link
-        url :
-        query ?                             // if we used filters
+  createUrl(query) {
+    return query ?
             this.createSearchUrl(query) :
             this.createAllDataUrl();
   }
