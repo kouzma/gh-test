@@ -1,0 +1,10 @@
+.filters {
+    padding: 10px;
+    border-bottom: 1px solid #777777;
+}
+.filters span {
+    margin-right: 10px;
+}
+.filters input {
+    margin-left: 5px;
+}

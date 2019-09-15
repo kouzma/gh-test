@@ -1,0 +1,32 @@
+.menu {
+     width: 250px;
+     float: left;
+ }
+.menu ul {
+    margin: 0px;
+    padding: 0px;
+}
+.menu li {
+    font-size: 18px;
+    background: #eeeeee;
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    text-align: center;
+}
+.activeLink {
+    font-weight: bold;
+}
+.content {
+    padding: 0px;
+    overflow: auto;
+}
+
+.clear {
+    clear: both;
+}
+html, body, #root,.all {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}

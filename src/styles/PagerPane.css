@@ -1,0 +1,15 @@
+.pager{
+    float: left;
+    padding: 5px;
+}
+.perPage {
+    float: right;
+    padding: 5px;
+}
+.pagerButton {
+     margin: 0px 5px;
+ }
+.pagerInput {
+    margin: 0px 5px;
+    width:50px;
+}

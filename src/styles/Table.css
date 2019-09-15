@@ -1,0 +1,12 @@
+table {
+    background: #ffffff;
+    width: 100%;
+}
+thead {
+    background: #777777;
+    font-weight: bold;
+    color: #ffffff;
+}
+td {
+    padding: 2px 5px;
+}
